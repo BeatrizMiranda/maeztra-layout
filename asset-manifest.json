@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/maeztra-layout/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/maeztra-layout/static/js/main.6cb429c8.chunk.js",
+    "main.js.map": "/maeztra-layout/static/js/main.6cb429c8.chunk.js.map",
+    "runtime-main.js": "/maeztra-layout/static/js/runtime-main.9a977ecb.js",
+    "runtime-main.js.map": "/maeztra-layout/static/js/runtime-main.9a977ecb.js.map",
+    "static/js/2.9ab10b5c.chunk.js": "/maeztra-layout/static/js/2.9ab10b5c.chunk.js",
+    "static/js/2.9ab10b5c.chunk.js.map": "/maeztra-layout/static/js/2.9ab10b5c.chunk.js.map",
+    "static/js/3.3b2f9433.chunk.js": "/maeztra-layout/static/js/3.3b2f9433.chunk.js",
+    "static/js/3.3b2f9433.chunk.js.map": "/maeztra-layout/static/js/3.3b2f9433.chunk.js.map",
+    "index.html": "/maeztra-layout/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/maeztra-layout/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.9ab10b5c.chunk.js.LICENSE.txt": "/maeztra-layout/static/js/2.9ab10b5c.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/maeztra-layout/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9a977ecb.js",
+    "static/js/2.9ab10b5c.chunk.js",
+    "static/css/main.8c8b27cf.chunk.css",
+    "static/js/main.6cb429c8.chunk.js"
+  ]
+}
