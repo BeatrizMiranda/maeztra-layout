@@ -1,0 +1,28 @@
+.skuSelector {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.skuSelector input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 27px;
+  height: 27px;
+  border-radius: 4px;
+}
+
+.skuSelector input:checked ~ .checkmark {
+  border: 1px solid #353535;
+}

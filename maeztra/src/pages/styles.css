@@ -1,0 +1,17 @@
+.header {
+  background: #fff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.08);
+}
+.menu {
+  background: #fff;
+}
+.searchInput {
+  background: #efefef;
+  min-height: 40px;
+  max-width: 100%;
+}
+@media (min-width: 769px) {
+  .searchInput {
+    min-width: 600px;
+  }
+}

@@ -1,0 +1,65 @@
+.slick-next {
+  right: 15px !important;
+  z-index: 1;
+}
+.slick-prev {
+  left: 15px !important;
+  z-index: 1;
+}
+.mainCarousel .slick-next {
+  right: 15%;
+  z-index: 1;
+}
+.mainCarousel .slick-prev {
+  left: 15%;
+  z-index: 1;
+}
+.slick-dots {
+  bottom: 10px !important;
+}
+.slick-dots li button:before {
+  content: "" !important;
+  opacity: 1 !important;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #faa500;
+  border-radius: 50%;
+}
+.slick-dots li.slick-active button:before {
+  content: "";
+  opacity: 1 !important;
+  background: #faa500;
+}
+.mainBannerText {
+  top: 35%;
+  left: 34%;
+  transform: translateX(-50%);
+}
+.mainBannerTitle {
+  font-family: "Montserrat";
+  font-size: 35px;
+}
+.mainBannerDesc {
+  font-size: 20px;
+}
+.stylesBtn {
+  font-family: "Montserrat";
+}
+
+.titleText {
+  color: #353535;
+  font-size: 16px;
+}
+.whyBuyContainer {
+  min-width: 240px;
+  background: #efefef;
+}
+.whyBuyContainerTitle {
+  font-size: 14px;
+}
+.whyBuyContainerDesc {
+  font-size: 12px;
+}
+ul.list > li {
+  padding: 10px 0;
+}
