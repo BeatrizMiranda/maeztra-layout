@@ -1,13 +1,13 @@
 import React from "react";
-import "../styles.css";
+import "./styles.css";
 
-function FooterLinks() {
+function FooterLinks({ isMobile }) {
   return (
     <div style={{ borderTop: "1px solid #EFEFEF" }}>
-      <div className="flex container justify-around ph4 pv5">
+      <div className={`flex container justify-around ph4 pv5 ${isMobile ? "flex-column" : ""}`}>
         <div className="flex flex-column">
-          <p className="fw7 pv2">Informações</p>
-          <ul className="list">
+          <button className="footerMenu fw7 pv2 bg-transparent bn tl">Informações</button>
+          <ul className={`list ${isMobile ? "dn" : "db"}`}>
             <li>Quem Somos</li>
             <li>Prazo de Envio</li>
             <li>Trocas e Devolução</li>
@@ -15,16 +15,16 @@ function FooterLinks() {
           </ul>
         </div>
         <div className="flex flex-column">
-          <p className="fw7 pv2">Minha Conta</p>
-          <ul className="list">
+          <button className="footerMenu fw7 pv2 bg-transparent bn tl">Minha Conta</button>
+          <ul className={`list ${isMobile ? "dn" : "db"}`}>
             <li>Minha Conta</li>
             <li>Meus Pedidos</li>
             <li>Cadastre-se</li>
           </ul>
         </div>
         <div className="flex flex-column">
-          <p className="fw7 pv2">Onde nos Encontrar</p>
-          <ul className="list">
+          <button className="footerMenu fw7 pv2 bg-transparent bn tl">Onde nos Encontrar</button>
+          <ul className={`list ${isMobile ? "dn" : "db"}`}>
             <li>Lojas</li>
             <li>Endereço</li>
           </ul>

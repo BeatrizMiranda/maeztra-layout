@@ -11,15 +11,17 @@ import ShelfProducts from "../components/ShelfProducts/ShelfProducts";
 import "./styles.css";
 
 function Home() {
+  const isMobile = window.screen.width < 769;
+
   return (
     <>
       <Header />
-      <MainCarousel />
+      <MainCarousel isMobile={isMobile} />
       <WhyBuy />
       <MarcasParceiras />
-      <ShelfProducts />
+      <ShelfProducts isMobile={isMobile} />
       <BannerContent />
-      <Footer />
+      <Footer isMobile={isMobile} />
     </>
   );
 }

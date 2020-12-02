@@ -3,16 +3,18 @@ import React from "react";
 import "./styles.css";
 
 function CardProduct({ colors, img, name, description, price }) {
+  const isMobile = window.screen.width < 769;
+
   return (
     <div className="flex flex-column  mh3">
-      <div className="items-center flex w-100">
+      <div className={`items-center flex w-100 ${isMobile ? "justify-center" : ""}`}>
         <img src={img} alt={name} style={{ maxWidth: "230px" }} />
       </div>
       <div className="skuSelect flex pv3">
         {colors.map((color) => (
-          <label class="skuSelector">
+          <label className="skuSelector" key={color}>
             <input type="radio" name="skuSelectorItem" />
-            <span style={{ backgroundColor: color }} class="checkmark"></span>
+            <span style={{ backgroundColor: color }} className="checkmark"></span>
           </label>
         ))}
       </div>

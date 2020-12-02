@@ -4,12 +4,12 @@ import NewsLetter from "./NewsLetter";
 import FooterLinks from "./FooterLinks";
 import FooterContact from "./FooterContact";
 
-function Footer() {
+function Footer({ isMobile }) {
   return (
     <>
-      <NewsLetter />
-      <FooterLinks />
-      <FooterContact />
+      <NewsLetter isMobile={isMobile} />
+      <FooterLinks isMobile={isMobile} />
+      <FooterContact isMobile={isMobile} />
     </>
   );
 }

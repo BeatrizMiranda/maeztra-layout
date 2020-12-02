@@ -63,3 +63,13 @@
 ul.list > li {
   padding: 10px 0;
 }
+.brandContainer > img {
+  max-width: 20%;
+}
+
+@media (max-width: 768px) {
+  .brandContainer > img {
+    max-width: 70%;
+    padding: 0 30px;
+  }
+}

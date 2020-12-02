@@ -12,9 +12,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../styles.css";
 
-function ShelfProducts() {
-  const isMobile = window.screen.width < 769;
-
+function ShelfProducts({ isMobile }) {
   const settings = {
     dots: false,
     infinite: true,

@@ -11,10 +11,14 @@ import visa from "../../images/payment/visa.png";
 import logoWhite from "../../images/logoWhite.png";
 import vtex from "../../images/vtex.png";
 
-function FooterContact() {
+function FooterContact({ isMobile }) {
   return (
     <div style={{ backgroundColor: "#353535" }}>
-      <div className="flex container justify-between pa3 items-center">
+      <div
+        className={`flex container justify-between pa3 items-center  ${
+          isMobile ? "flex-column" : ""
+        }`}
+      >
         <div className="socialMedia">
           <img className="pa3" src={facebook} alt="facebook" />
           <img className="pa3" src={link} alt="linkedIn" />

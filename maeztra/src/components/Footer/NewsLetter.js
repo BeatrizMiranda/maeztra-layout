@@ -1,17 +1,15 @@
 import React from "react";
 
-function NewsLetter() {
-  const isMobile = window.screen.width < 769;
-
+function NewsLetter({ isMobile }) {
   return (
     <div className="mt5" style={{ borderTop: "1px solid #EFEFEF" }}>
       <div
         className={`container flex justify-center items-center flex-wrap ${
-          isMobile ? "pa2" : "pa5"
+          isMobile ? "pa2 flex-column" : "pa5"
         }`}
       >
         <p className="mr3 fw8">Recebe Nossa Newsletter</p>
-        <div className="relative">
+        <div className={`relative ${isMobile ? "mt4" : ""}`}>
           <input
             type="text"
             placeholder="Digite seu e-mail"

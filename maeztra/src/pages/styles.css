@@ -9,6 +9,7 @@
   background: #efefef;
   min-height: 40px;
   max-width: 100%;
+  min-width: 300px;
 }
 @media (min-width: 769px) {
   .searchInput {

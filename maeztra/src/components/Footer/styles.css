@@ -1,0 +1,10 @@
+@media (max-width: 768px) {
+  .footerMenu {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  .footerMenu:after {
+    content: "+";
+  }
+}

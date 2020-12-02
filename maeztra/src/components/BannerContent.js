@@ -3,10 +3,12 @@ import React from "react";
 import banner from "../images/banner.png";
 
 function BannerContent() {
+  const isMobile = window.screen.width < 769;
+
   return (
     <div className="mv5">
-      <div className="flex container items-center ">
-        <div className="w-30">
+      <div className="flex container items-center flex-wrap">
+        <div className={isMobile ? "w-100" : "w-30"}>
           <p className="fw7 pb3" style={{ fontSize: "24px" }}>
             Lorem Ipsum
           </p>
@@ -20,7 +22,7 @@ function BannerContent() {
             phasellus donec condimentum sit sapien.
           </p>
         </div>
-        <img className="w-70 pl5" src={banner} alt="banner" />
+        <img className={isMobile ? "w-100 mt4 br3" : "w-70 pl5"} src={banner} alt="banner" />
       </div>
     </div>
   );

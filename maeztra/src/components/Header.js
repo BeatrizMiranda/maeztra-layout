@@ -6,18 +6,30 @@ import { ReactComponent as CartIcon } from "../images/cart.svg";
 import { ReactComponent as HeartIcon } from "../images/heart.svg";
 import { ReactComponent as NewsIcon } from "../images/icon-dress.svg";
 import { ReactComponent as Search } from "../images/search.svg";
+import { ReactComponent as Menu } from "../images/menu.svg";
 
 function Header() {
   const isMobile = window.screen.width < 769;
   return (
     <div>
-      <div className="w-100 pa3 white flex justify-center" style={{ backgroundColor: "#353535" }}>
+      <div
+        className="w-100 pa3 white flex justify-center"
+        style={{ backgroundColor: "#353535", fontSize: isMobile ? "10px" : "12px" }}
+      >
         Acompanhe as melhores promoções disponíveis aqui na Maeztra.
       </div>
-      <header className="header pa3">
+      <header className="header">
         <div className="flex justify-between container center">
-          <div className="logo flex justify-center items-center">
-            <img src={logo} alt="Maeztra Logo" />
+          <div
+            className="logo flex justify-center items-center"
+            style={{ marginRight: isMobile ? "auto" : "0" }}
+          >
+            {isMobile && (
+              <button className="mr3 bg-transparent bn">
+                <Menu />
+              </button>
+            )}
+            <img style={{ maxWidth: isMobile ? "110px" : "150px" }} src={logo} alt="Maeztra Logo" />
           </div>
           <div className="busca flex justify-center items-center relative">
             {isMobile ? (
@@ -45,7 +57,7 @@ function Header() {
                 </div>
               </>
             )}
-            <div className="card pa4 flex items-center">
+            <div className={`${isMobile ? "ml4" : ""} card pa4 flex items-center`}>
               <CartIcon /> {!isMobile && <span className="pl2">Meu Carrinho</span>}
             </div>
           </div>
