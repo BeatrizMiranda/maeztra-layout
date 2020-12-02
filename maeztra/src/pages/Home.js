@@ -1,5 +1,6 @@
 import React from "react";
 
+import Modal from "../components/Modal";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import WhyBuy from "../components/WhyBuy";
@@ -15,6 +16,7 @@ function Home() {
 
   return (
     <>
+      <Modal isMobile={isMobile} />
       <Header />
       <MainCarousel isMobile={isMobile} />
       <WhyBuy />
